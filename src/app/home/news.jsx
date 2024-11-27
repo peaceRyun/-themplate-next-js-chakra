@@ -1,3 +1,4 @@
+import { Container } from '@chakra-ui/react'
 import React from 'react'
 
 const mockNews = [
@@ -41,17 +42,19 @@ const mockNews = [
 
 const News = () => {
   return (
-    <div>
-      <h2>News</h2>
-      <ul>
-        {mockNews.map((news, index) => (
-          <li key={index}>
-            <h3>{news.title}</h3>
-            <p>{news.content}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <section>
+      <Container>
+        <h2>News</h2>
+        <ul>
+          {mockNews.map((news, index) => (
+            <li key={index}>
+              <h3>{news.title}</h3>
+              <p>{news.content}</p>
+            </li>
+          ))}
+        </ul>
+      </Container>
+    </section>
   )
 }
 
