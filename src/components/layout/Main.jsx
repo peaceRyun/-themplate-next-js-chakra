@@ -11,7 +11,7 @@ const Main = ({ children }) => {
 
 export const Section = ({ children }) => {
   return (
-    <section>
+    <section className='py-20'>
       <Container>
         { children }
       </Container>
