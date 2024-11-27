@@ -1,12 +1,12 @@
 "use client";
 
-import { Container, Flex, Heading } from '@chakra-ui/react'
+import { Container, Heading } from '@chakra-ui/react'
 import React from 'react'
 
 const Header = () => {
   return (
-    <header>
-      <Container className='flex justify-between items-center'>
+    <header className='fiexd top-0 left-0 right-0 bg-white backdrop-blur-md'>
+      <Container size="full" className='flex justify-between items-center'>
         <Heading as="h1">logo</Heading>
         <nav>nav</nav>
       </Container>
