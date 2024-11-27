@@ -3,7 +3,7 @@ import React from 'react'
 const mockNews = [
   {
     title: 'News 1',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien nec nunc ultricies lacinia. Nullam nec nunc nec nunc ultricies lacinia. Nullam nec nunc nec nunc ultricies",
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien nec nunc ultricies lacinia. Nullam nec nunc nec nunc ultricies lacinia. Nullam nec nunc nec nunc ultricies',
   },
   {
     title: 'News 2',
