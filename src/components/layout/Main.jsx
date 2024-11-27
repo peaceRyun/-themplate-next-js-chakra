@@ -1,4 +1,6 @@
-import { Container } from '@chakra-ui/react'
+"use client";
+
+import { Container, Heading } from '@chakra-ui/react'
 import React from 'react'
 
 const Main = ({ children }) => {
@@ -9,11 +11,12 @@ const Main = ({ children }) => {
   )
 }
 
-export const Section = ({ children }) => {
+export const Section = ({ title, children }) => {
   return (
     <section className='py-20'>
-      <Container>
-        { children }
+      <Container className='flex flex-col gap-5'>
+        {title && <Heading>{title}</Heading>}
+        <div>{children}</div>
       </Container>
     </section>
   )
