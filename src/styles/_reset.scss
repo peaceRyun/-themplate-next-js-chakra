@@ -1,3 +1,6 @@
+$white: #ffffff !default;
+$black: #000000 !default;
+
 // font-style
 $font-family-base: "Pretendard", sans-serif !default;
 $font-size-base: 17px !default;
@@ -27,6 +30,41 @@ a {
     text-decoration: underline;
   }
 }
+
+// 스킵 네비게이션
+#skip-nav {
+    position: relative;
+    z-index: 3000
+}
+
+#skip-nav a {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 138px;
+    border: 1px solid #4ec53d;
+    background: #333;
+    text-align: center;
+    opacity: 0
+}
+
+#skip-nav a:active,#skip-nav a:focus {
+    top: 0;
+    text-decoration: none;
+    z-index: 1000;
+    opacity: 1
+}
+
+#skip-nav span {
+    display: inline-block;
+    padding: 2px 6px 0 0;
+    font-size: 13px;
+    line-height: 26px;
+    color: #fff;
+    letter-spacing: -1px;
+    white-space: nowrap
+}
+
 
 /* reset */
 body,
