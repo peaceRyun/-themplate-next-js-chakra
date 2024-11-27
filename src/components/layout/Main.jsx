@@ -9,13 +9,13 @@ const Main = ({ children }) => {
   )
 }
 
-const Section = ({ children }) => {
+export const Section = ({ children }) => {
   return (
-    <Section>
+    <section>
       <Container>
         { children }
       </Container>
-    </Section>
+    </section>
   )
 }
 
