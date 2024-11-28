@@ -6,7 +6,7 @@ import React from 'react'
 const AboutLayout = ({ children }) => {
   return (
     <>
-      <Header type='type2' title="about" sharing={true} />
+      <Header type='type2' title="about" sharing={true} prev={true} />
       <Main>{ children }</Main>
       <Footer />
     </>

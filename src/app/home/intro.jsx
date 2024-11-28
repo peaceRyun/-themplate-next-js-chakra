@@ -30,7 +30,7 @@ export default function IntroSwiper() {
       >
         <SwiperSlide>
           <AspectRatio>
-            <Image src="/images/pattern/main/intro-slide-2.jpg" alt="Picture of the author" width={1200} height={500} />
+            <Image src="/images/pattern/main/intro-slide-1.jpg" alt="Picture of the author" width={1200} height={500} />
           </AspectRatio>
         </SwiperSlide>
         <SwiperSlide>

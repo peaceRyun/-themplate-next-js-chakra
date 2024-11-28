@@ -1,6 +1,7 @@
 export const Button = {
   baseStyle: {
-    fontWeight: 'bold',
+    minWidth: '40px',
+    minHeight: '40px',
     borderRadius: 'md',
   },
   sizes: {
@@ -31,7 +32,16 @@ export const Button = {
       },
     },
     ghost: {
-      bg: 'gray.200',
+      // bg: 'gray.200',
+      color: 'gray.800',
+      _hover: {
+        bg: 'gray.300',
+      },
+    },
+    icon: {
+      px: 0,
+      py: 0,
+      bg: 'transparent',
       color: 'gray.800',
       _hover: {
         bg: 'gray.300',

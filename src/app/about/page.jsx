@@ -4,10 +4,10 @@ import History from './components/history'
 
 const AboutPage = () => {
   return (
-    <div>
+    <>
       <Bos />
       <History />
-    </div>
+    </>
   )
 }
 
