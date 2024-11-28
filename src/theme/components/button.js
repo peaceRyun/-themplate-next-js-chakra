@@ -16,6 +16,13 @@ export const Button = {
     },
   },
   variants: {
+    solid: {
+      bg: 'blue.500',
+      color: 'white',
+      _hover: {
+        bg: 'blue.600',
+      },
+    },
     outline: {
       bg: 'blue.500',
       color: 'white',
@@ -33,6 +40,6 @@ export const Button = {
   },
   defaultProps: {
     size: 'md',
-    variant: 'primary',
+    variant: 'solid',
   },
 }

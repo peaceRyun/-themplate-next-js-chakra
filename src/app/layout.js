@@ -2,10 +2,11 @@
 
 import "@/styles/globals.scss";
 import { Providers } from "@/components/providers";
+import SkipNav from "@/components/layout/header/SkipNav";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ko" className="light">
+    <html lang="ko">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,15 +21,11 @@ export default function RootLayout({ children }) {
         <meta name="twitter:description" content="페이지 설명" />
         <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
         <meta name="twitter:domain" content="사이트 명" />
-        <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
       </head>
       <body>
         <Providers>
-          <div id="skip-nav">
-            <a href="#gnb">메뉴 바로가기</a>
-            <a href="#container">본문 바로가기</a>
-          </div>
+          <SkipNav />
           <div id="wrap" className="min-h-svh flex flex-col">
             {children}
           </div>
