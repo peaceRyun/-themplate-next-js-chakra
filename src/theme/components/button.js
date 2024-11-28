@@ -38,15 +38,21 @@ export const Button = {
         bg: 'gray.300',
       },
     },
-    icon: {
+    icon: (props) => ({
       px: 0,
       py: 0,
-      bg: 'transparent',
-      color: 'gray.800',
+      bg: "transparent",
+      display: "flex",
+      justifyContent:
+        props.align === "left"
+          ? "flex-start"
+          : props.align === "right"
+          ? "flex-end"
+          : "center",
       _hover: {
-        bg: 'gray.300',
+        color: "primary",
       },
-    },
+    }),
   },
   defaultProps: {
     size: 'md',
